@@ -1,0 +1,247 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1286" measuredH="2615" mockupW="1216" mockupH="2579">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="70" y="36" w="800" h="361" measuredW="450" measuredH="400" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>RightPrice%0Ahttp%3A//www.rightprice.info</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::TextArea" x="887" y="36" w="397" h="158" measuredW="200" measuredH="140" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>-%20Single%20page%20web%20application%0A-%20User%20need%20to%20only%20select%20the%20product%20and%20location%2C%20then%20click%20%22Check%20Price%22%20button%20to%20begin%20checking%20the%20price%0A-%20User%20can%20add%20multiple%20locations%20for%20comparison%0A-%20Expanded%20view%20of%20%22select%20product%22%20list%20and%20%22select%20location%22%20list%20below%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::ComboBox" x="887" y="225" w="188" h="-1" measuredW="161" measuredH="124" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Choose%20your%20product...%0AiPhone%204s%0AiPhone%205%0AiPhone%205c%0AiPhone%205s%0AiPhone%206%0AiPhone%206+</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Component" x="110" y="139" w="637" h="127" measuredW="637" measuredH="127" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0">
+          <text>Choose%20your%20product...</text>
+        </override>
+        <src>./assets/symbols.bmml#Section1</src>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="70" y="1015" w="800" h="1600" measuredW="450" measuredH="400" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>RightPrice%0Ahttp%3A//www.rightprice.info</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Component" x="110" y="1095" w="637" h="127" measuredW="637" measuredH="127" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0">
+          <text>iPhone%206</text>
+        </override>
+        <override controlID="4">
+          <text>All%20of%20U..S.</text>
+        </override>
+        <src>./assets/symbols.bmml#Section1</src>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Label" x="524" y="1267" w="-1" h="-1" measuredW="31" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>From</text>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::TextInput" x="569" y="1264" w="115" h="-1" measuredW="83" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>02/15/2015</text>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::TextInput" x="718" y="1264" w="114" h="-1" measuredW="83" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>03/15/2015</text>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::Label" x="695" y="1267" w="-1" h="-1" measuredW="13" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>to</text>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::Icon" x="652" y="1267" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CalendarIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Icon" x="800" y="1267" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CalendarIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::Arrow" x="747" y="1749" w="171" h="10" measuredW="150" measuredH="100" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>0</curvature>
+        <direction>top</direction>
+        <rightArrow>false</rightArrow>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::TextArea" x="918" y="1385" w="366" h="195" measuredW="200" measuredH="140" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>-%20Source%3A%20http%3A//c3js.org/samples/timeseries.html%0A-%20c3.js%20graphic%20%28similar%20to%20d3%29%0A-%20show%20price%20over%20the%20period%20specified%0A-%20User%20can%20mouse-over%20the%20plot%20and%20the%20exact%20average%20price%20for%20the%20corresponding%20time%20period%20will%20pop%20up%0A-%20Additional%20line%20per%20region%20would%20pop%20up%20if%20more%20than%20one%20region%20selected</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Image" x="99" y="1328" w="750" h="252" measuredW="1179" measuredH="270" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/C3.js%2520%257C%2520D3-based%2520reusable%2520chart%2520library.jpg</src>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::Arrow" x="847" y="1464" w="73" h="10" measuredW="150" measuredH="100" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>0</curvature>
+        <direction>top</direction>
+        <rightArrow>false</rightArrow>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::ComboBox" x="1090" y="225" w="188" h="-1" measuredW="161" measuredH="140" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Choose%20your%20location...%0AAll%20of%20U.S.%0AAL%0AAK%0AAZ%0AAR%0ACA%0A...%20etc%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Arrow" x="847" y="1272" w="73" h="10" measuredW="150" measuredH="100" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>0</curvature>
+        <direction>top</direction>
+        <rightArrow>false</rightArrow>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::TextArea" x="920" y="1252" w="366" h="51" measuredW="200" measuredH="140" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>-%20By%20default%2C%20the%20period%20between%20today%20and%20up%20to%20one-month-ago%20would%20be%20selected</text>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::TextArea" x="920" y="1095" w="366" h="98" measuredW="200" measuredH="140" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>-%20After%20user%20click%20%22check%20price%22%20button%2C%20the%20date%20selection%20field%20and%20the%20two%20graphs%20would%20be%20shown%20on%20the%20same%20page%20%28without%20reloading%20the%20page%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::Icon" x="118" y="281" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CircledPlusIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::TextArea" x="918" y="1662" w="366" h="168" measuredW="200" measuredH="140" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>-%20Source%3A%20http%3A//c3js.org/samples/chart_bar.html%0A-%20show%20price%20of%20all%20the%20cities%20in%20ascending%20order%0A-%20User%20can%20mouse-over%20the%20plot%20to%20get%20the%20exact%20average%20price%20for%20each%20city%0A-%20Additional%20bar%20per%20region%20would%20pop%20up%20if%20more%20than%20one%20region%20selected</text>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::Image" x="93" y="1620" w="758" h="288" measuredW="1061" measuredH="288" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/C3.js%2520%257C%2520D3-based%2520reusable%2520chart%2520library-1.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::Button" x="118" y="325" w="-1" h="-1" measuredW="96" measuredH="27" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Check%20Price%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::Button" x="118" y="1240" w="-1" h="-1" measuredW="96" measuredH="27" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Check%20Price%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::Label" x="153" y="283" w="-1" h="-1" measuredW="179" measuredH="21" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Click%20to%20add%20additional%20location</text>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="70" y="445" w="800" h="457" measuredW="450" measuredH="400" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>RightPrice%0Ahttp%3A//www.rightprice.info</text>
+      </controlProperties>
+    </control>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::Component" x="110" y="548" w="637" h="127" measuredW="637" measuredH="127" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0">
+          <text>iPhone%206+</text>
+        </override>
+        <override controlID="4">
+          <text>AR</text>
+        </override>
+        <src>./assets/symbols.bmml#Section1</src>
+      </controlProperties>
+    </control>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::Icon" x="118" y="770" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CircledPlusIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::Button" x="118" y="814" w="-1" h="-1" measuredW="96" measuredH="27" zOrder="29" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Check%20Price%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::Label" x="153" y="772" w="-1" h="-1" measuredW="179" measuredH="21" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Click%20to%20add%20additional%20location</text>
+      </controlProperties>
+    </control>
+    <control controlID="58" controlTypeID="com.balsamiq.mockups::ComboBox" x="119" y="688" w="188" h="-1" measuredW="88" measuredH="24" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>iPhone%205c</text>
+      </controlProperties>
+    </control>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::ComboBox" x="342" y="688" w="188" h="-1" measuredW="85" measuredH="24" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>All%20of%20U.S.</text>
+      </controlProperties>
+    </control>
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::ComboBox" x="119" y="726" w="188" h="-1" measuredW="89" measuredH="24" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>iPhone%204s</text>
+      </controlProperties>
+    </control>
+    <control controlID="61" controlTypeID="com.balsamiq.mockups::ComboBox" x="342" y="726" w="188" h="-1" measuredW="48" measuredH="24" zOrder="34" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>CA</text>
+      </controlProperties>
+    </control>
+    <control controlID="62" controlTypeID="com.balsamiq.mockups::Icon" x="547" y="688" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="35" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CircledMinusIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="63" controlTypeID="com.balsamiq.mockups::Icon" x="547" y="727" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="36" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CircledMinusIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::TextArea" x="889" y="445" w="397" h="158" measuredW="200" measuredH="140" zOrder="37" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>-%20After%20clicking%20the%20%22plus%22%20icon%2C%20user%20can%20add%20additional%20locations%0A-%20There%20will%20be%20%22minus%22%20icon%20next%20to%20location%20that%20allows%20user%20to%20delete%20the%20geography%20selection%20%28except%20for%20the%20very%20first%20location%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::DataGrid" x="99" y="1977" w="695" h="274" measuredW="440" measuredH="51" zOrder="38" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Craigslist%20Title%2C%20Price%2C%20URL%0Ahot%20iPhone%206%20for%20sales%21%21%21%2C%20%24323%2C%20www.craiglist.hdfsfaf/asdfsaffaslja.html%0A%7B45L%2C%2010L%2C%2045%7D</text>
+      </controlProperties>
+    </control>
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::Label" x="98" y="1310" w="-1" h="-1" measuredW="486" measuredH="24" zOrder="39" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Daily%20Average%20Price%20of%20iPhone%206%20between%202015-02-15%20to%202015-03-15</text>
+      </controlProperties>
+    </control>
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::Label" x="98" y="1596" w="-1" h="-1" measuredW="577" measuredH="24" zOrder="40" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Average%20Price%20of%20iPhone%206%20in%20Different%20Cities%20between%202015-02-15%20to%202015-03-15</text>
+      </controlProperties>
+    </control>
+    <control controlID="68" controlTypeID="com.balsamiq.mockups::Label" x="99" y="1938" w="-1" h="-1" measuredW="427" measuredH="24" zOrder="41" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>10%20Cheapest%20iPhones%206%20between%202015-02-15%20to%202015-03-15</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -1,0 +1,110 @@
+<div>
+	<div class="container-fluid" id="main-container">
+		<div class='row'> 
+			<h1 class='col-sm-7'>Your Perfect Price Comparison Tool</h1>
+			<div class='col-sm-5' id='nlp-mode'>
+				<p>Select NLP Mode: </p> 
+					<button type="submit" ng-class="{'btn btn-success':nlp_mode=='supervised','btn btn-default':nlp_mode=='unsupervised'}" ng-click='setMode("supervised")'>Supervised</button>
+					<button type="submit" ng-class="{'btn btn-default':nlp_mode=='supervised','btn btn-success':nlp_mode=='unsupervised'}" ng-click='setMode("unsupervised")'>Unsupervised</button>	
+<!-- 
+					<button type="submit" class="btn btn-success" ng-click='setMode("supervised")'>Supervised</button>
+					<button type="submit" class="btn btn-default" ng-click='setMode("unsupervised")'>Unsupervised</button>	
+ -->
+<!-- http://segmentfault.com/q/1010000000442179   for more info to use datepicker with angular -->
+			</div>
+		</div>
+		<div class='row' id='intro'> 
+			<div class='col-sm-6'>
+				<h4>
+					Call us web ninjas.<br> 
+					Call us robbinhood of the modern age.<br> 
+					Call us spidermen and spiderwomen in the web of things.
+				</h4>
+				<h4>Or simply call us mad data scientists...</h4>
+				<h4>We are here to stop you from getting ripped off from buying second-hand items online. Let us work the magic by whipping out data from the internet out of the blue, sprinkling some natural language processing powder to make the data beautiful, and screaming the data through S3 and MongoDB to give you pure and accurate results at your fingertips. </h4>
+
+				<h4>Please make your product and location selection below: </h4>
+		
+				<form class='form-inline'>
+					<div class='form-group'>
+						<label>Select product of</label>
+						<select class="form-control" ng-model="product" data-ng-options="p.id as p.product for p in products"></select>
+						<label>and at location of</label>
+						<select class="form-control" ng-model="location" data-ng-options="l.id as l.location for l in locations"></select>
+					</div>
+					<div class='form-group' id='select-period'>
+						<label>Select data collection period from </label>
+						<input class='form-control' type='date' ng-model='startDate' required>
+						<label>to</label>
+						<input class='form-control' type='date' ng-model='endDate' required>
+					</div>
+					<div>
+						<button id='price-btn' type="submit" class="btn btn-primary" value='Add' ng-click='getListings()'>Check Price !</button>
+					</div>
+				</form>
+
+			</div>
+			<div class='col-sm-6'><img src="./img/spiderwoman.jpg"></div>
+		</div> <!-- end of intro and product/location selection area area --> 
+
+		<div class='row' id='results'>
+			<div class='col-sm-12'><h3>{{title_results}}</h3></div>
+		</div>		
+		<h4 class='row'><div class='col-sm-12'>{{title_priceLatest}}</div></h4>
+		<h4 class='row'><div class='col-sm-12'>{{title_priceTime}}</div></h4>
+		<div id="chart-price-time"></div>
+		<h4 class='row'><div class='col-sm-12'>{{title_priceCity}}</div></h4>
+		<div id="chart-price-city"></div>
+		<h4 class='row'><div class='col-sm-12'>{{title_allItems}}</div></h4>
+		<div class='row' id='filter-box'>
+			<div class='col-sm-2'><input class='filter form-control' type='text' ng-model='filter_listings' placeholder='Filter listings...'></div>
+			<div class='col-sm-3'>
+				<form class='form-inline'>
+					<label>Sort by: </label>
+					<!-- <select class="form-control" data-ng-model="product" data-ng-options="p.id as p.product for p in products"></select> -->
+					<select class="form-control" ng-model="order_option" data-ng-options="o.id as o.order_option for o in order_options" ng-change="sortListings()"></select>
+				</form>
+			</div>
+		</div>
+
+		<table class='table table-bordered table-condensed table-hover' id='listings-table'>
+			<tr>
+				<th>Product</th>
+				<th>Description</th>
+				<th>Price</th>
+				<th>City</th>
+				<th>Date Listed</th>
+			</tr>
+			<tr ng-repeat="listing in listings_allItem | filter:filter_listings">
+				<td><a href="{{listing.url}}" target='_blank' id='url-link'>{{listing.product}}</a></td>
+				<td>{{listing.title}}</td>
+				<td>${{listing.price}}</td>
+				<td>{{listing.city}}</td>
+				<td>{{listing.created_at|date:'y-MM-dd'}}</td>
+				<!-- <td>{{listing.created_at|date:'y-MM-dd '+'(hh:mma) Z'}}</td> -->
+				<!-- <td>{{listing.created_at|date:'MMM d, y  h:mma'}}</td> -->
+				<!-- <td>{{listing.created_at}}</td> -->
+			</tr>
+		</table>
+
+<!-- 
+		<form novalidate>
+			<p>Enter in format: val1,val2,val3,etc</p>
+			<input ng-model="config.data1" type="text" size="100"/>
+			<select ng-model="config.type1" ng-options="typeOption for typeOption in typeOptions"></select>
+			<p>Enter in format: val1,val2,val3,etc</p>
+			<input ng-model="config.data2" type="text" size="100"/>
+			<select ng-model="config.type2" ng-options="typeOption for typeOption in typeOptions"></select>
+		</form>
+		<p>After pushing the following button the chart will be shown.</p>
+		<button ng-click="showGraph()">Show graph</button>
+		<div id="chart"></div>
+		<div class="row">
+	    <div class="col-md-12">
+	      <p>The next <strong>&lt;DIV&gt;</strong> will be overwritten by the directive</p>
+		    <div paramlessattribute>This content will be overwritten by the directive</div> 
+	    </div>
+	  </div>
+ -->
+	</div> <!-- end of container-fluid -->
+</div> <!-- end of start of partial div -->

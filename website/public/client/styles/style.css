@@ -1,0 +1,38 @@
+/*.add-btn{
+	background-color: blue; color:white; border:none;
+	margin-left: 120px
+}
+.remove-btn{
+	background-color: red; color:white; border:none;
+}
+.edit-btn{
+	background-color: green; color:white; border:none; 
+	text-decoration: none; font-size:12px; padding:3px;
+}
+.remove-btn,.edit-btn{display: inline-block; vertical-align: top}
+
+form, .filter {display: inline-block;}
+.filter {margin: 10px 0px}
+
+table{border-collapse: collapse; width:600px;}
+td,th{border:gray solid 1px; padding:5px;}
+*/
+
+/* Overall */
+#main-container{
+	margin: 20px;
+}
+
+#main-container h4 {margin-top:20px;margin-bottom:20px;}
+/*#intro h4{padding:0px; margin: 0px;}*/
+#price-btn {margin-top: 20px}
+img{height:400px;width:500px;}
+#results {margin-top: 20px}
+#nlp-mode{margin-top:25px;}
+#nlp-mode p, #nlp-mode input{display: inline-block; vertical-align: top}
+#nlp-mode p {margin: 6px 10px 0px 10px}
+#nlp-mode input{width: 160px;}
+#listings-table {font-size:12px;}
+#filter-box {margin-bottom: 10px;}
+#url-link {text-decoration: underline;}
+#select-period {margin-top: 15px}

@@ -1,10 +1,10 @@
 #Craigslist Price Comparison Tool
 
 ##Group Members
+* Nate Black (nathaniel.j.black@gmail.com)
 * Arthur Mak (arthur.t.mak@gmail.com)
 * Malini Mittal (malini.mittal@gmail.com)
 * Marguerite Oneto (marguerite@oneto.us)
-* Nate Black (nathaniel.j.black@gmail.com)
 
 ##Introduction
 Craigslist is a classified advertisements website that was founded in the late 1990s. Over the past decade, the website has expanded to over 2,000 markets in 50 countries. The website rapidly gained popularity due to it’s low cost, ease of use, and user freedom. With services in housing, personal advertisements, jobs, for sale, and community, the website has a plethora of data. But sifting through that data can be extremely challenging due to the free-form nature of the website. 

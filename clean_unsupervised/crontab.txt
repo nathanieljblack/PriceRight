@@ -1,0 +1,2 @@
+MAILTO=marguerite@oneto.us
+14 15 * * * bash runCleanData.sh >/dev/null

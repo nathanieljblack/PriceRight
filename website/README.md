@@ -28,11 +28,11 @@ This setup.sh script would initialize and update the Ubuntu OS, install Nginx se
 ## Step 3: Load Database and Run ##
 Open Mongo console by typing "mongo" in the command line and enter the following instructions to create database and collections inside MongoDB.
 
-Open editor to edit a python script:
+Use editor to edit a python script:
 
     sudo vi /opt/app/website/data/load_ubuntu/load.py
 
-Modify the following line inside  (using your AWS credential):
+Modify the following line inside the file using your AWS credential and save the changes:
 
     conn = S3Connection('CHANGE_THIS_your_key_id','CHANGE_THIS_your_secret_access_key')
 

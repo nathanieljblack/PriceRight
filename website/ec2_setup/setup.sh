@@ -32,7 +32,7 @@ sudo apt-get install git
 # pull repo from Github
 cd /opt/
 sudo mkdir app
-sudo git clone https://github.com/maktrix16/w205_project.git app
+sudo git clone https://github.com/maktrix16/w205_priceright.git app
 # install node packages
 cd /opt/app/website/public
 sudo mv node_modules node_modules-original

@@ -35,11 +35,10 @@ sudo mkdir app
 sudo git clone https://github.com/maktrix16/w205_priceright.git app
 # install node packages
 cd /opt/app/website/public
-sudo mv node_modules node_modules-original
 sudo npm install --save
 sudo npm install -g nodemon
 # configure node to run 24x7 even when instance die
-cd /opt/app/website/public/ec2_setup
+cd /opt/app/website/ec2_setup
 sudo cp node-app.conf /etc/init/
 sudo start node-app
 # configure nginx and run it

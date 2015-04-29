@@ -19,7 +19,7 @@ Download this file [setup.sh](https://github.com/maktrix16/w205_priceright/tree/
 
     scp -i w205_keypair.pem ~/your_path_to_downloaded_file/setup.sh ubuntu@52.5.39.120:
 
-Inside your EC2 instance run the setup.sh script (keep selecting "y" or "enter" when prompted):
+Inside your EC2 instance run the setup.sh script. Keep selecting "y" or "enter" when prompted. You will need to enter your Github account and password for private repository access during the setup:
 
     sh setup.sh
 
@@ -28,13 +28,17 @@ This setup.sh script would initialize and update the Ubuntu OS, install Nginx se
 ## Step 3: Load Database and Run ##
 Open Mongo console by typing "mongo" in the command line and enter the following instructions to create database and collections inside MongoDB.
 
-Modify the following lines inside /opt/app/data/load.py (using your AWS credential):
+Use editor to edit a python script:
+
+    sudo vi /opt/app/website/data/load_ubuntu/load.py
+
+Modify the following line inside the file using your AWS credential and save the changes:
 
     conn = S3Connection('CHANGE_THIS_your_key_id','CHANGE_THIS_your_secret_access_key')
 
 Load data into a database called 'w205project' from MongoDB by entering following command line input:
 
-    python /opt/app/data/load_ubuntu/loadAll.py
+    python /opt/app/website/data/load_ubuntu/loadAll.py
 
 Type your EC2 IP address in your web browser and the website should be up and running, ready for some serious data retrieval jobs! 
 

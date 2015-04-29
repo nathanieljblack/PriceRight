@@ -177,7 +177,8 @@ listings.getListings_priceCity = function(req,res){
 				// posts: {$sum:1}
 			}
 		},
-		{$sort : {_id:1}} //by alphabetical order of city
+		// {$sort : {_id:1}} //by alphabetical order of city
+		{$sort : {avg_price:-1}} //by alphabetical order of city
 	],function(err,data){
 		if(err){
 			res.send('something went wrong with retrieving average price per city!');

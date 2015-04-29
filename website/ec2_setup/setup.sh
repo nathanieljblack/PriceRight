@@ -33,17 +33,13 @@ sudo apt-get install git
 cd /opt/
 sudo mkdir app
 sudo git clone https://github.com/maktrix16/w205_project.git app
-cd /opt/app/
-# load data from MongoDB (use Ubuntu version for python 2.6.7)
-cd /opt/app/data/load_ubuntu
-python loadAll.py
 # install node packages
-cd /opt/app/public
+cd /opt/app/website/public
 sudo mv node_modules node_modules-original
 sudo npm install --save
 sudo npm install -g nodemon
 # configure node to run 24x7 even when instance die
-cd /opt/app/public/ec2_setup
+cd /opt/app/website/public/ec2_setup
 sudo cp node-app.conf /etc/init/
 sudo start node-app
 # configure nginx and run it
@@ -51,7 +47,3 @@ sudo cp node-app /etc/nginx/sites-available/
 sudo rm /etc/nginx/sites-enabled/default
 sudo ln -s /etc/nginx/sites-available/node-app /etc/nginx/sites-enabled/node-app
 sudo /etc/init.d/nginx restart
-
-
-
-

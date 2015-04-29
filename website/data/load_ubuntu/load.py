@@ -25,7 +25,8 @@ class LoadData():
         self.client = MongoClient('localhost', 27017)
         # client = MongoClient('mongodb://localhost:27017/')
         self.db = self.client.w205project
-        conn = S3Connection('AKIAI7L6SP6IIZZ2MWVQ','J+wLQX43ShWu4JnPGwHXcuHTc1QTq8SeXZ9AyKyN')
+        # connect to S3 with AWS credentials
+        conn = S3Connection('CHANGE_THIS_your_key_id','CHANGE_THIS_your_secret_access_key')
         self.bucket = conn.get_bucket(BUCKET_NAME)
 
     # helper function to convert num to double-digit string (eg. 4 -> "04")
@@ -118,7 +119,7 @@ class LoadData():
                 for listing in listings:
                     pred_class = listing['pred_class']
                     if pred_class != -1:
-                        if pred_class == 0:
+                        if pred_class == 0 or pred_class == '0':
                             product = "iPhone (unclassified)"
                         else:
                             product = "iPhone "+pred_class

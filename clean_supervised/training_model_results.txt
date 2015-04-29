@@ -1,0 +1,10 @@
+The model was trained on 2299 observations.
+
+The model accurately predicts 97.5% of the training set.
+
+               precision    recall  f1-score   support
+
+Not an iPhone       0.98      0.97      0.97      1119
+       iPhone       0.97      0.98      0.98      1180
+
+  avg / total       0.98      0.98      0.98      2299

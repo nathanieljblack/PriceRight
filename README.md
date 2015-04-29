@@ -16,24 +16,24 @@ Fair value is defined as the rational estimate of the market price for a good. B
 The goal of this project is to produce a user-friendly application that provides a price comparison interface whenever a user conducts a search on a particular item. The website will be able to answer questions such as:  
 * What is the fair market value of the item?  
 * What is the trend of the price of the item per city?  
-* What is the trend of the price of the item across the country?  
+* What is the average price of the item across the country?  
 
 A possible extension could be to create a Craigslist consumer price index (CPI) and see how its performance compares with the official Bureau of Labor Statistics (BLS) CPI.
 
 
 ##Acquiring Craigslist Data  
-For this and subsequent sections, please refer to Appendix B for the proposed web architecture of our project. We will use a Python script to scrape the data off of the Craigslist website.  We will use Python packages such as scrapy.py, Beautifulsoup, and possibly lxml to scrape and parse the data. We will need to look at the HTML source of the various web pages to decide which data need to be scraped and how we can get to them programmatically. The Python script would be executed on a daily bases using Cronjob as our time-based job scheduler from the virtual Linux server on our EC2 instance. Our data acquisition process is likely to be resource intensive in terms of “time” (not “memory” or “CPU”) because we like the python script to scrape data in a manner more like a “human-being” at a reasonable pace. Otherwise, Craigslist would likely to keep blocking our data acquisition process.
+We use a Python script to scrape the data off of the Craigslist website.  The Python script is executed on a daily basis using Cronjob. 
 
 ##Cleaning the Data  
-Once the data are acquired, they will need to be cleaned before we can use them in the live environment of web application. All the unwanted, unnecessary fields will be removed. We will need to differentiate between cases where a search for a certain keywords brings up exact, related, as well as unrelated items. We will use some NLP techniques here to match potentially different descriptions to the same item.
+Once the data is acquired, it needs to be cleaned before we can use it in the live environment of web application. All the unwanted, unnecessary fields are removed. NLP techniques are used to match potentially different descriptions to the same item as well as to weed out unrelated items.
 
 ##Storing the Data  
-Raw data from the data acquisition process would be stored in Amazon S3’s key-value store since it is an economical storage. After the data are acquired and properly cleaned by the Python scripts, the data will be passed to our database of choice - MongoDB, which can be used by our live web application. We will manually deploy MongoDB inside an Amazon EC2 instance (all the python scripts and web app components will also reside in the same instance). The data would include, but not be limited to, fields such as brand name, product name, price, and date of post of the product.   
+Raw data from the data acquisition process is stored in Amazon S3’s key-value store. After the data is acquired and properly cleaned by the Python scripts, it is passed on to our database of choice - MongoDB, which is used by our live web application.   
 
 ##Retrieving the Data  
-Our web application is a live website where the user would input item search parameters. The search parameters would include product name, location, and a date range. Our choice of code stack for building the website is commonly known as the “MEAN” stack (MongoDB, Express.io, Angular.js, Node.js). This is a full stack where the server, database, and model-view-controller (MVC) framework can be setup such that we can have a live website that works with MongoDB.  
+Our web application is a live website where the user can input item search parameters. The search parameters include product name, location, and a date range. Our choice of code stack for building the website is commonly known as the “MEAN” stack (MongoDB, Express.io, Angular.js, Node.js). This is a full stack where the server, database, and model-view-controller (MVC) framework can be setup such that we can have a live website that works with MongoDB.  
 
-Whenever users make a query via our website, the “model” component of the MVC framework would send a request to acquire the needed data from the MongoDB database stored on Amazon EC2. The “controller” component of the framework would perform any further data crunching and data preparations prior to passing to the “view” component of the framework. The user would then be able to see the data in the form of a rendered visualization. We are still deciding on the actual set of visualizations, but we would most 
+Whenever users make a query via our website, the “model” component of the MVC framework sends a request to acquire the needed data from the MongoDB database stored on Amazon EC2. The “controller” component of the framework performs any further data crunching and data preparations prior to passing to the “view” component of the framework. The user is then be able to see the data in the form of a rendered visualization. 
 
 ##Relational Diagram  
 ![alt tag](https://github.com/maktrix16/w205_project/blob/master/relational_map.jpg)

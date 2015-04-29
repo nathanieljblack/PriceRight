@@ -24,3 +24,9 @@ The runCleanData.sh shell script is used to run cleanDataUnsupervised.py on a
 daily basis.
 
 The crontab.txt file was used to set up the cron job on the EC2 instance.
+
+##Run the Code
+To run the code, insert your AWS keys into the file awsAuthenticationW205.py.  Then 
+type "python cleanDataUnsupervised.py" on the command line.  This will clean the
+raw data that was pulled from Craigslist today and put it into the S3 folder
+w205-price-comparison-tool/clean/unsupervised/<todays-date>.

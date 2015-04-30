@@ -4,7 +4,7 @@ Python web crawling framework Scrapy was chosen to scrape the website as it prov
 ##Implementation
 There is one crawler per city. The decision to replicate code was mainly to keep the code simpler, to have the ability to run the spiders for different cities on different machines, and also to be able to run these spiders in a parallel manner, giving us the potential to scale up to many more cities/countries in the future.   
     
-The main script is _gatherData.py_.
+The main script is ``gatherData.py``.
 
 ###gatherData.py   
 This script does the following main tasks:
@@ -13,7 +13,7 @@ This script does the following main tasks:
 * Move all the scraped data to S3
 
 ##How to run
-The shell script runScrapers.sh calls the gatherData.py script.  
+The shell script ``runScrapers.sh`` calls the ``gatherData.py`` script.  
 ```
 #!/bin/bash
 

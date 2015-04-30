@@ -25,7 +25,8 @@ class LoadData():
         self.client = MongoClient('localhost', 27017)
         # client = MongoClient('mongodb://localhost:27017/')
         self.db = self.client.w205project
-        conn = S3Connection('CHANGE_THIS_your_key_id','CHANGE_THIS_your_secret_access_key')
+        # conn = S3Connection('CHANGE_THIS_your_key_id','CHANGE_THIS_your_secret_access_key')
+        conn = S3Connection()
         self.bucket = conn.get_bucket(BUCKET_NAME)
 
     # helper function to convert num to double-digit string (eg. 4 -> "04")
